@@ -3,10 +3,10 @@ from rest_framework import serializers
 from core.models import User
 
 
-class UserSerializer(Serializer.ModelSerializer):
+class UserSerializer(serializers.ModelSerializer):
     class Meta:
         model = User
-        fields = '__all__'
+        fields = ['id', 'first_name', 'last_name', 'email', 'password', 'is_ambassador']
         extra_kwargs = {
             'password': {'write_only': True}
         }

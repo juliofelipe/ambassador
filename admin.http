@@ -1,1 +1,10 @@
 POST http://localhost:8000/api/admin/register HTTP/1.1
+Content-Type: application/json
+
+{
+    "first_name": "Julio",
+    "last_name": "Felipe",
+    "email": "julio@informach.com.br",
+    "password": "123456",
+    "password_confirm": "123456"
+}
